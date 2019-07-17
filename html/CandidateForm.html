@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form-EmployeeDetails</title>
+</head>
+<body>
+    <form>
+        <table width="40%" border="2px" align="center" style="background-color:lightblue; ">
+            <tr>
+            <td>Name:</td>
+            <td><input type="text" name="ename" size="20" maxlength="20" pattern="[a-z]{1,20}" required></td>
+            <span class="validity"></span>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="passwd" size="20"  maxlength="4" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" name="num" size ="20" maxlength="10" pattern="[789][0-9]{9}" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td required>
+                    <input type="radio" name="check" value="Male">Male
+                    <input type="radio" name="check" value="Female">Female<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth:</td>
+                <td><input type="date" name="date" required><br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                    <td>Highest Qualification:</td>
+                    <td>
+                        <select name="programs" required value="Select Highest Qualifications">
+                            <option value="BE">BE</option>
+                            <option value="BTech">BTech</option>
+                            <option value="MBA">MBA</option>
+                        </select>
+                    </td>
+                </tr>
+
+            <tr>
+                <td>Courses Intrested in:</td>
+                <td required>
+                    <input type="checkbox" name="chbox" value="Java">Java
+                    <input type="checkbox" name="chbox" value="HTML 5">HTML 5
+                    <input type="checkbox" name="chbox" value="CSS 3">CSS 3
+                    <input type="checkbox" name="chbox" value="Angular JS">Angular JS
+                    <input type="checkbox" name="chbox" value="Jquery">Jquery
+                </td>
+            </tr>
+            <tr>
+                <td>Comments:(Mention External Certifications if any</td>
+                <td><textarea name="addr" Rows="2" cols="40" tabindex="0" accesskey="A"></textarea></td>
+            </tr>
+
+
+            <tr>
+                <td>Upload Degree/External Certifications:</td>
+                <td >
+                    <input type="file" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Submit Information">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

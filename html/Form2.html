@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form-EmployeeDetails</title>
+</head>
+<body>
+    <form>
+        <table border="2px" align="center" style="background-color:lightblue; ">
+            <tr>
+            <td>Name</td>
+            <td><input type="text" name="ename" size="20" maxlength="20" pattern="[a-z]{1,20}"></td>
+            <span class="validity"></span>
+            </tr>
+            <tr>
+                <td>Employee Code</td>
+                <td><input type="text" name="ename" size="4"  maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>Deparment</td>
+                <td>
+                    <input type="radio" name="check" value="admin">Admin<br>
+                    <input type="radio" name="check" value="HR">HR<br>
+                    <input type="radio" name="check" value="Technical">Technical<br>
+                    <input type="radio" name="check" value="Accounts">Accounts<br>
+                </td>
+            </tr>
+            <tr>
+                <td>date of Joining</td>
+                <td><input type="date" name="date"><br/>
+                    mm&nbsp;&nbsp;&nbsp;dd&nbsp;&nbsp;&nbsp;YYYY
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="addr" Rows="5" cols="40" tabindex="0" accesskey="A"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Training Program Attended</td>
+                <td>
+                    <input type="checkbox" name="chbox" value="HTML/DHTML">HTML/DHTML<br>
+                    <input type="checkbox" name="chbox" value="Java">Java<br>
+                    <input type="checkbox" name="chbox" value="Client/Server">Client/Server<br>
+                    <input type="checkbox" name="chbox" value=".NET">.NET<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Training Program Need To Attend</td>
+                <td>
+                    <select name="programs">
+                        <option value="JS">JavaScript</option>
+                        <option value="MDB">Mango DB</option>
+                        <option value="CORBA">CORBA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Send the Information At</td>
+                <td>
+                    <a href="empinfo@capgemini.coxm">empinfo@capgemini.coxm.</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit Form"  style="background-color:white;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
